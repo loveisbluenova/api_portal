@@ -61,7 +61,7 @@
                                     </div>
                                     <div class="form-group">
                                         <div class="col-lg-6">
-                                            <input type="submit" class="btn btn-primary">
+                                            <input type="submit" class="btn btn-primary" value="Enviar">
                                             <a href="/admin" class="btn btn-danger">Reset</a>
                                         </div>   
                                     </div>
