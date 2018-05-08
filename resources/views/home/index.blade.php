@@ -60,7 +60,10 @@
                                         <div class="col-lg-3"><input type="text" class="form-control"  value="{{$form_data[2]}}"></div>
                                     </div>
                                     <div class="form-group">
-                                        <div class="col-lg-6"><input type="submit" class="btn btn-primary"></div>   
+                                        <div class="col-lg-6">
+                                            <input type="submit" class="btn btn-primary">
+                                            <a href="/admin" class="btn btn-danger">Reset</a>
+                                        </div>   
                                     </div>
                                     
                                 </form>
