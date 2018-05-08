@@ -88,7 +88,7 @@ CREATE TABLE `product` (
   `volume_base_pro` decimal(10,1) DEFAULT '0.0',
   `manage_inner_pack` tinyint(3) unsigned NOT NULL DEFAULT '0',
   `umb_inner_pack` int(11) DEFAULT NULL,
-  `dun_inner_pack` int(11) DEFAULT NULL,
+  `dun_inner_pack` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `net_weight_inner_pack` decimal(8,3) DEFAULT '0.000',
   `gross_weight_inner_pack` decimal(8,3) DEFAULT '0.000',
   `long_inner_pack` decimal(5,1) DEFAULT NULL,
@@ -97,7 +97,7 @@ CREATE TABLE `product` (
   `volume_inner_pack` decimal(10,1) DEFAULT '0.0',
   `handle_master_box` tinyint(3) unsigned NOT NULL DEFAULT '0',
   `umb_manage_box` int(11) DEFAULT NULL,
-  `dun_manage_box` int(11) DEFAULT NULL,
+  `dun_manage_box` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `net_weight_manage_box` decimal(8,3) DEFAULT '0.000',
   `gross_weight_manage_box` decimal(8,3) DEFAULT '0.000',
   `long_manage_box` decimal(5,1) DEFAULT '0.0',
@@ -106,7 +106,7 @@ CREATE TABLE `product` (
   `volume_manage_box` decimal(10,1) DEFAULT '0.0',
   `handle_layer` tinyint(3) unsigned NOT NULL DEFAULT '0',
   `umb_layer` int(11) DEFAULT NULL,
-  `dun_layer` int(11) DEFAULT NULL,
+  `dun_layer` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `net_weight_layer` decimal(5,1) DEFAULT '0.0',
   `gross_weight_layer` decimal(5,1) DEFAULT '0.0',
   `long_layer` decimal(5,1) DEFAULT '0.0',
@@ -115,7 +115,7 @@ CREATE TABLE `product` (
   `volume_layer` decimal(10,1) DEFAULT '0.0',
   `handle_pallet` tinyint(3) unsigned DEFAULT '0',
   `umb_pallet` int(11) DEFAULT NULL,
-  `dun_pallet` int(11) DEFAULT NULL,
+  `dun_pallet` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `net_weight_pallet` decimal(5,1) DEFAULT '0.0',
   `gross_weight_pallet` decimal(5,1) DEFAULT '0.0',
   `long_pallet` decimal(5,1) DEFAULT '0.0',
@@ -134,7 +134,7 @@ CREATE TABLE `product` (
   `temperature` int(11) DEFAULT NULL,
   `humidity` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -143,7 +143,6 @@ CREATE TABLE `product` (
 
 LOCK TABLES `product` WRITE;
 /*!40000 ALTER TABLE `product` DISABLE KEYS */;
-INSERT INTO `product` VALUES (1,'DS459037','459037','VG2439SMH','MT VWS VG2439SMH 24\'\' HDMI/VGA',1,223,'234234234',21.000,22.000,32.0,21.0,32.0,42122.0,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'master_box',NULL,1234,NULL,'L-S',1,NULL,8,1,NULL,1);
 /*!40000 ALTER TABLE `product` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -298,7 +297,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'Admin','admin@admin.com','$2y$10$TPxlrbsxAkSAZuGhD54UjeYHZXToO34avDOdbxZ77RCKl/vxdYvse',1,'ca9cfe71-001e-45da-a088-118562af118c',76124329,1,NULL,'2018-05-08 12:58:02','2018-05-08 12:58:02',NULL),(2,'Demo','demo@admin.com','$2y$10$iWnmaGowoTmkkxaRwXVspOngcHCT5GYXlDa.K0tC.0c0/AjbJZMOW',1,'addd0b69-1b04-4e95-ac2b-c1b001c068d6',76072001,1,NULL,'2018-05-08 12:58:02','2018-05-08 12:58:02',NULL);
+INSERT INTO `users` VALUES (1,'Admin','admin@admin.com','$2y$10$imJTkZu.QEqDNfxOKqkab.uHNs05HHGneH4QZiIGUbga3calb9YC6',1,'6392cdec-21f9-4338-aa2e-fe1214eb6301',76124329,1,NULL,'2018-05-08 13:55:02','2018-05-08 13:55:02',NULL),(2,'Demo','demo@admin.com','$2y$10$cey4elrpY2lEQUeT8Cr4ke2aFON9Bnrf2amNZs.AKfSfS9tjL6zO2',1,'c5843dcf-a704-4507-b174-eba145593338',76072001,1,NULL,'2018-05-08 13:55:02','2018-05-08 13:55:02',NULL);
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -338,4 +337,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-05-08 17:34:29
+-- Dump completed on 2018-05-08 17:55:49

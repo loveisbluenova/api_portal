@@ -30,7 +30,7 @@ class CreateProductTable extends Migration
             $table->decimal('volume_base_pro', 10, 1)->nullable()->default(0.0);
             $table->tinyInteger('manage_inner_pack')->default(0)->unsigned();
             $table->Integer('umb_inner_pack')->nullable();
-            $table->Integer('dun_inner_pack')->nullable();
+            $table->string('dun_inner_pack')->nullable();
             $table->decimal('net_weight_inner_pack', 8, 3)->nullable()->default(0.000);
             $table->decimal('gross_weight_inner_pack', 8, 3)->nullable()->default(0.000);
             $table->decimal('long_inner_pack', 5, 1)->nullable()->efault(0.0);
@@ -39,7 +39,7 @@ class CreateProductTable extends Migration
             $table->decimal('volume_inner_pack', 10, 1)->nullable()->default(0.0);
             $table->tinyInteger('handle_master_box')->default(0)->unsigned();
             $table->Integer('umb_manage_box')->nullable();
-            $table->Integer('dun_manage_box')->nullable();
+            $table->string('dun_manage_box')->nullable();
             $table->decimal('net_weight_manage_box', 8, 3)->nullable()->default(0.000);
             $table->decimal('gross_weight_manage_box', 8, 3)->nullable()->default(0.000);
             $table->decimal('long_manage_box', 5, 1)->nullable()->default(0.0);
@@ -48,7 +48,7 @@ class CreateProductTable extends Migration
             $table->decimal('volume_manage_box', 10, 1)->nullable()->default(0.0);
             $table->tinyInteger('handle_layer')->default(0)->unsigned();
             $table->Integer('umb_layer')->nullable();
-            $table->Integer('dun_layer')->nullable();
+            $table->string('dun_layer')->nullable();
             $table->decimal('net_weight_layer', 5, 1)->nullable()->default(0.000);
             $table->decimal('gross_weight_layer', 5, 1)->nullable()->default(0.000);
             $table->decimal('long_layer', 5, 1)->nullable()->default(0.0);
@@ -57,7 +57,7 @@ class CreateProductTable extends Migration
             $table->decimal('volume_layer', 10, 1)->nullable()->default(0.0);
             $table->tinyInteger('handle_pallet')->nullable()->default(0)->unsigned();
             $table->Integer('umb_pallet')->nullable();
-            $table->Integer('dun_pallet')->nullable();
+            $table->string('dun_pallet')->nullable();
             $table->decimal('net_weight_pallet', 5, 1)->nullable()->default(0.000);
             $table->decimal('gross_weight_pallet', 5, 1)->nullable()->default(0.000);
             $table->decimal('long_pallet', 5, 1)->nullable()->default(0.0);
