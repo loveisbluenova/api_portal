@@ -234,6 +234,9 @@ class DashboardController extends Controller
                 return view('home.index', compact('form_data', 'product'));
             //}
         }
+        else {
+            return redirect('admin')->with('error', $data->response);
+        }
        
     }
 }
