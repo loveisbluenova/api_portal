@@ -248,22 +248,22 @@
                                                     </td>
                                                     <td>
                                                         <div class="form-group">
-                                                            <div class="col-lg-12"><input type="number" class="form-control" name="long_manage_box" id="long_manage_box" min="0.1" max="150" step="0.1" value="@if($product!=NULL) {{$product->long_manage_box}} @endif"></div>
+                                                            <div class="col-lg-12"><input type="number" class="form-control" name="long_manage_box" id="long_manage_box" min="0.1" max="150" step="0.1" value="@if($product!=NULL){{$product->long_manage_box}}@endif"></div>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="form-group">
-                                                            <div class="col-lg-12"><input type="number" class="form-control" name="width_manage_box" id="width_manage_box" min="0.1" max="150" step="0.1" value="@if($product!=NULL) {{$product->width_manage_box}} @endif"></div>
+                                                            <div class="col-lg-12"><input type="number" class="form-control" name="width_manage_box" id="width_manage_box" min="0.1" max="150" step="0.1" value="@if($product!=NULL){{$product->width_manage_box}}@endif"></div>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="form-group">
-                                                            <div class="col-lg-12"><input type="number" class="form-control" name="height_manage_box" id="height_manage_box" min="0.1" max="150" step="0.1" value="@if($product!=NULL) {{$product->height_manage_box}} @endif"></div>
+                                                            <div class="col-lg-12"><input type="number" class="form-control" name="height_manage_box" id="height_manage_box" min="0.1" max="150" step="0.1" value="@if($product!=NULL){{$product->height_manage_box}}@endif"></div>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="form-group">
-                                                            <div class="col-lg-12"><input type="number" class="form-control" name="volume_manage_box" id="volume_manage_box" min="0.1" max="500000" step="0.1" value="@if($product!=NULL) {{$product->volume_manage_box}} @endif"></div>
+                                                            <div class="col-lg-12"><input type="number" class="form-control" name="volume_manage_box" id="volume_manage_box" min="0.1" max="500000" step="0.1" value="@if($product!=NULL){{$product->volume_manage_box}}@endif"></div>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -280,44 +280,44 @@
                                                     <td>
                                                         <div class="form-group"><label class="col-lg-8 control-label">UMB/LAYER</label>
 
-                                                            <div class="col-lg-4"><input type="text" class="form-control" name="umb_layer" id="umb_layer" value="@if($product!=NULL) {{$product->umb_layer}} @endif"></div>
+                                                            <div class="col-lg-4"><input type="text" class="form-control" name="umb_layer" id="umb_layer" value="@if($product!=NULL){{$product->umb_layer}}@endif"></div>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="form-group"><label class="col-lg-4 control-label">DUN14</label>
 
-                                                            <div class="col-lg-8"><input type="text" class="form-control" name="dun_layer" id="dun_layer" value="@if($product!=NULL) {{$product->dun_layer}} @endif"> 
+                                                            <div class="col-lg-8"><input type="text" class="form-control" name="dun_layer" id="dun_layer" value="@if($product!=NULL){{$product->dun_layer}}@endif"> 
                                                             </div>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="form-group">
-                                                            <div class="col-lg-12"><input type="number" class="form-control" name="net_weight_layer" id="net_weight_layer" min="0.1" max="400" step="0.1" value="@if($product!=NULL) {{$product->net_weight_layer}} @endif"></div>
+                                                            <div class="col-lg-12"><input type="number" class="form-control" name="net_weight_layer" id="net_weight_layer" min="0.1" max="400" step="0.1" value="@if($product!=NULL){{$product->net_weight_layer}}@endif"></div>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="form-group">
-                                                            <div class="col-lg-12"><input type="number" class="form-control" name="gross_weight_layer" id="gross_weight_layer" min="0.1" max="400" step="0.1" value="@if($product!=NULL) {{$product->gross_weight_layer}} @endif"></div>
+                                                            <div class="col-lg-12"><input type="number" class="form-control" name="gross_weight_layer" id="gross_weight_layer" min="0.1" max="400" step="0.1" value="@if($product!=NULL){{$product->gross_weight_layer}}@endif"></div>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="form-group">
-                                                            <div class="col-lg-12"><input type="number" class="form-control" name="long_layer" id="long_layer" min="0.1" max="150" step="0.1" value="@if($product!=NULL) {{$product->long_layer}} @endif"></div>
+                                                            <div class="col-lg-12"><input type="number" class="form-control" name="long_layer" id="long_layer" min="0.1" max="150" step="0.1" value="@if($product!=NULL){{$product->long_layer}}@endif"></div>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="form-group">
-                                                            <div class="col-lg-12"><input type="number" class="form-control" name="width_layer" id="width_layer" min="0.1" max="150" step="0.1" value="@if($product!=NULL) {{$product->width_layer}} @endif"></div>
+                                                            <div class="col-lg-12"><input type="number" class="form-control" name="width_layer" id="width_layer" min="0.1" max="150" step="0.1" value="@if($product!=NULL){{$product->width_layer}}@endif"></div>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="form-group">
-                                                            <div class="col-lg-12"><input type="number" class="form-control" name="height_layer" id="height_layer" min="0.1" max="150" step="0.1" value="@if($product!=NULL) {{$product->height_layer}} @endif"></div>
+                                                            <div class="col-lg-12"><input type="number" class="form-control" name="height_layer" id="height_layer" min="0.1" max="150" step="0.1" value="@if($product!=NULL){{$product->height_layer}}@endif"></div>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="form-group">
-                                                            <div class="col-lg-12"><input type="number" class="form-control" name="volume_layer" id="volume_layer" min="0.1" max="1000000" step="0.1" value="@if($product!=NULL) {{$product->volume_layer}} @endif"></div>
+                                                            <div class="col-lg-12"><input type="number" class="form-control" name="volume_layer" id="volume_layer" min="0.1" max="1000000" step="0.1" value="@if($product!=NULL){{$product->volume_layer}}@endif"></div>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -333,44 +333,44 @@
                                                     <td>
                                                         <div class="form-group"><label class="col-lg-8 control-label">UMB/PALLET</label>
 
-                                                            <div class="col-lg-4"><input type="text" class="form-control" name="umb_pallet" id="umb_pallet" value="@if($product!=NULL) {{$product->umb_pallet}} @endif"></div>
+                                                            <div class="col-lg-4"><input type="text" class="form-control" name="umb_pallet" id="umb_pallet" value="@if($product!=NULL){{$product->umb_pallet}}@endif"></div>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="form-group"><label class="col-lg-4 control-label">DUN14</label>
 
-                                                            <div class="col-lg-8"><input type="text" class="form-control" name="dun_pallet" id="dun_pallet" value="@if($product!=NULL) {{$product->dun_pallet}} @endif"> 
+                                                            <div class="col-lg-8"><input type="text" class="form-control" name="dun_pallet" id="dun_pallet" value="@if($product!=NULL){{$product->dun_pallet}}@endif"> 
                                                             </div>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="form-group">
-                                                            <div class="col-lg-12"><input type="number" class="form-control" name="net_weight_pallet" id="net_weight_pallet" min="0.1" max="2500" step="0.1" value="@if($product!=NULL) {{$product->net_weight_pallet}} @endif"></div>
+                                                            <div class="col-lg-12"><input type="number" class="form-control" name="net_weight_pallet" id="net_weight_pallet" min="0.1" max="2500" step="0.1" value="@if($product!=NULL){{$product->net_weight_pallet}}@endif"></div>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="form-group">
-                                                            <div class="col-lg-12"><input type="number" class="form-control" name="gross_weight_pallet" id="gross_weight_pallet" min="0.1" max="2500" step="0.1" value="@if($product!=NULL) {{$product->gross_weight_pallet}} @endif"></div>
+                                                            <div class="col-lg-12"><input type="number" class="form-control" name="gross_weight_pallet" id="gross_weight_pallet" min="0.1" max="2500" step="0.1" value="@if($product!=NULL){{$product->gross_weight_pallet}}@endif"></div>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="form-group">
-                                                            <div class="col-lg-12"><input type="number" class="form-control" name="long_pallet" id="long_pallet" min="0.1" max="180" step="0.1" value="@if($product!=NULL) {{$product->long_pallet}} @endif"></div>
+                                                            <div class="col-lg-12"><input type="number" class="form-control" name="long_pallet" id="long_pallet" min="0.1" max="180" step="0.1" value="@if($product!=NULL){{$product->long_pallet}}@endif"></div>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="form-group">
-                                                            <div class="col-lg-12"><input type="number" class="form-control" name="width_pallet" id="width_pallet" min="0.1" max="180" step="0.1" value="@if($product!=NULL) {{$product->width_pallet}} @endif"></div>
+                                                            <div class="col-lg-12"><input type="number" class="form-control" name="width_pallet" id="width_pallet" min="0.1" max="180" step="0.1" value="@if($product!=NULL){{$product->width_pallet}}@endif"></div>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="form-group">
-                                                            <div class="col-lg-12"><input type="number" class="form-control" name="height_pallet" id="height_pallet" min="0.1" max="180" step="0.1" value="@if($product!=NULL) {{$product->height_pallet}} @endif"></div>
+                                                            <div class="col-lg-12"><input type="number" class="form-control" name="height_pallet" id="height_pallet" min="0.1" max="180" step="0.1" value="@if($product!=NULL){{$product->height_pallet}}@endif"></div>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="form-group">
-                                                            <div class="col-lg-12"><input type="number" class="form-control" name="volume_pallet" id="volume_pallet" min="0.1" max="1500000" step="0.1" value="@if($product!=NULL) {{$product->volume_pallet}} @endif"></div>
+                                                            <div class="col-lg-12"><input type="number" class="form-control" name="volume_pallet" id="volume_pallet" min="0.1" max="1500000" step="0.1" value="@if($product!=NULL){{$product->volume_pallet}}@endif"></div>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -678,6 +678,11 @@
                     },
                     volume_pallet: {
                         greaterThan: "#volume_layer"
+                    },
+                    //////////////////////////////////////////////
+                    temperature: {
+                        required: true,
+                        number: true
                     },
 
                 },
