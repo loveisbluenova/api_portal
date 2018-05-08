@@ -537,6 +537,13 @@
                 }, "This field must be required."
             );
 
+            $.validator.addMethod("time24", function(value, element) {
+                if (!/^\d{2}:\d{2}$/.test(value)) return false;
+                var parts = value.split(':');
+                if (parts[0] > 23 || parts[1] > 59) return false;
+                return true;
+            }, "Invalid time format.");
+
             $("#api-search").validate({
                 rules: {
                     coduni: {
@@ -578,10 +585,13 @@
                     ////////////////////////////////////////////
                     dun_inner_pack: {
                         required: true,
+                        number: true,
+                        maxlength: 14,
                         checkIdentify: true,
                     },
                     umb_inner_pack: {
-                        greaterThan: "#umb" 
+                        greaterThan: "#umb",
+                        number: true,
                     },
                     net_weight_inner_pack: {
                         greaterThan: "#net_weight_base_pro"
@@ -604,10 +614,13 @@
                     //////////////////////////////////////////
                     dun_manage_box: {
                         required: true,
+                        number: true,
+                        maxlength: 14,
                         checkIdentify: true,
                     },
                     umb_manage_box: {
-                        greaterThan: "#umb_inner_pack" 
+                        greaterThan: "#umb_inner_pack",
+                        number: true,
                     },
                     net_weight_manage_box: {
                         greaterThan: "#net_weight_inner_pack"
@@ -630,10 +643,13 @@
                     ///////////////////////////////////////
                     dun_layer: {
                         required: true,
+                        number: true,
+                        maxlength: 14,
                         checkIdentify: true,
                     },
                     umb_layer: {
-                        greaterThan: "#umb_manage_box" 
+                        greaterThan: "#umb_manage_box",
+                        number: true,
                     },
                     net_weight_layer: {
                         greaterThan: "#net_weight_manage_box"
@@ -656,10 +672,13 @@
                     ////////////////////////////////////////////////
                     dun_pallet: {
                         required: true,
+                        number: true,
+                        maxlength: 14,
                         checkIdentify: true,
                     },
                     umb_pallet: {
-                        greaterThan: "#umb_layer" 
+                        greaterThan: "#umb_layer",
+                        number: true,
                     },
                     net_weight_pallet: {
                         greaterThan: "#net_weight_layer"
@@ -684,6 +703,9 @@
                         required: true,
                         number: true
                     },
+                    main_supplier: {
+                        time24: true,
+                    }
 
                 },
                 messages: {
