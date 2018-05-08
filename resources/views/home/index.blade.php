@@ -17,12 +17,14 @@
                         <!--  -->
                          
                         @if (session('message'))
-                            <div class="alert alert-success">
+                            <div class="alert alert-success alert-dismissionable">
+                                <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
                                 {{ session('message') }}
                             </div>
                         @endif
                         @if (session('error'))
-                            <div class="alert alert-danger">
+                            <div class="alert alert-danger alert-dismissionable">
+                                <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
                                 {{ session('error') }}
                             </div>
                         @endif
@@ -484,7 +486,7 @@
                                     </div>
                                 </div>
                                 <div class="ibox float-e-margins">
-                                    <input type="submit" class="btn btn-primary">
+                                    <input type="submit" class="btn btn-primary" value="Enviar">
                                 </div>
                             </form>
 
